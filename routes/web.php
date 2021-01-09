@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::get('/products', 'ProductController@index');
 Route::get('/departments', 'DepartmentController@index');
+Route::get('/departments/new', "DepartmentController@create");
+Route::post('/departments', 'DepartmentController@store');
