@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{asset('css/app.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
     <title>Product Register</title>
 </head>
 <body>
