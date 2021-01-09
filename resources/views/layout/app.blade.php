@@ -8,12 +8,18 @@
         body {
             padding: 20px;
         }
+        .navbar {
+            margin-bottom: 20px;
+        }
     </style>
     <title>Product Register</title>
 </head>
 <body>
 
     <div class="container">
+        @component('component-navbar')
+        @endcomponent
+
         <main role="main">
             @hasSection ('body')
                 @yield('body')
