@@ -20,3 +20,6 @@ Route::get('/departments', 'DepartmentController@index');
 Route::get('/departments/new', "DepartmentController@create");
 Route::post('/departments', 'DepartmentController@store');
 Route::get('departments/delete/{id}', 'DepartmentController@destroy');
+Route::get('departments/edit/{id}', 'DepartmentController@edit');
+Route::post('/departments/{id}', 'DepartmentController@update');
+
