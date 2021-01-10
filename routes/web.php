@@ -19,3 +19,4 @@ Route::get('/products', 'ProductController@index');
 Route::get('/departments', 'DepartmentController@index');
 Route::get('/departments/new', "DepartmentController@create");
 Route::post('/departments', 'DepartmentController@store');
+Route::get('departments/delete/{id}', 'DepartmentController@destroy');
