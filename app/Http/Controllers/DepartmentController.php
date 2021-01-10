@@ -90,9 +90,8 @@ class DepartmentController extends Controller
     {
         $department = Department::find($id);
 
-        if (!isset($department)) {
-            $department->delete();
-        }
+        
+        $department->delete();
 
         return redirect('/departments');
     }

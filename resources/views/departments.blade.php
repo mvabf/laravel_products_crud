@@ -22,8 +22,8 @@
                     <td>{{$dep['id']}}</td>
                     <td>{{$dep['name']}}</td>
                     <td>
-                        <a href="/departments/edit/{{$dep['id']}}" class="btn btn-sm btn-primary">Edit</a>
-                        <a href="/departments/delete/{{$dep['id']}}" class="btn btn-sm btn-danger">Delete</a>
+                        <a href="/departments/edit/{{$dep->id}}" class="btn btn-sm btn-primary">Edit</a>
+                        <a href="/departments/delete/{{$dep->id}}" class="btn btn-sm btn-danger">Delete</a>
                     </td> 
                 </tr>
             @endforeach
