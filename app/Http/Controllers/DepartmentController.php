@@ -14,7 +14,9 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        return view('departments');
+        $departments = Department::all();
+
+        return view('departments')->with('departments', $departments);
     }
 
     /**
@@ -40,6 +42,8 @@ class DepartmentController extends Controller
         $department->name = $request->input('departmentName');
 
         $department->save();
+
+        return redirect('/departments');
     }
 
     /**
